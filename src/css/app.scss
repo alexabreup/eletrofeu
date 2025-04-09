@@ -1,0 +1,36 @@
+// app global css in SCSS form
+@import 'quasar.variables.sass';
+
+// Global transitions
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+// Drawer transitions
+.q-drawer {
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+// Custom hover effects for menu items
+.q-item {
+  transition: background-color 0.2s ease, color 0.2s ease;
+  
+  &:hover {
+    background-color: rgba($primary, 0.1);
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 600px) {
+  .q-page-sticky {
+    .q-btn {
+      transform: scale(0.9);
+    }
+  }
+}

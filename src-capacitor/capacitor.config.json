@@ -1,0 +1,22 @@
+{
+  "appId": "org.capacitor.quasar.app",
+  "appName": "Eletrofeu Player",
+  "webDir": "../dist/spa",
+  "server": {
+    "androidScheme": "https",
+    "url": "http://192.168.43.13:9500",
+    "cleartext": true
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 3000,
+      "launchAutoHide": true,
+      "backgroundColor": "#1976d2",
+      "androidSplashResourceName": "splash",
+      "androidScaleType": "CENTER_CROP",
+      "showSpinner": true,
+      "androidSpinnerStyle": "large",
+      "spinnerColor": "#ffffff"
+    }
+  }
+}

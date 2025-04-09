@@ -1,0 +1,13 @@
+{
+  "name": "eletrofeu-player",
+  "version": "2.0.0",
+  "description": "Eletrofeu Troféu Player - Versão reestruturada",
+  "author": "Eletrofeu Team",
+  "private": true,
+  "dependencies": {
+    "@capacitor/android": "^6.2.1",
+    "@capacitor/app": "^6.0.0",
+    "@capacitor/cli": "^6.0.0",
+    "@capacitor/core": "^6.0.0"
+  }
+}

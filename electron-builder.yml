@@ -1,0 +1,35 @@
+appId: "com.eletrofeu.player"
+productName: "Eletrofeu Player"
+copyright: "Copyright © 2025 Eletrofeu Team"
+
+directories:
+  buildResources: public
+  output: dist/electron
+
+files:
+  - "!node_modules/**/*"
+  - from: "."
+    filter:
+      - package.json
+      - app
+
+linux:
+  category: "AudioVideo"
+  target:
+    - AppImage
+    - deb
+  maintainer: "Eletrofeu Team"
+  vendor: "Eletrofeu"
+  synopsis: "Media Player for Eletrofeu"
+  description: "A modern media player application built with Quasar Framework"
+  icon: "public/icons"
+
+appImage:
+  artifactName: "${productName}-${version}.${ext}"
+
+deb:
+  artifactName: "${productName}-${version}.${ext}"
+  depends:
+    - libnotify4
+    - libxtst6
+    - libnss3
